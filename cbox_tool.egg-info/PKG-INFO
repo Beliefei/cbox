@@ -1,26 +1,28 @@
-from setuptools import setup, find_packages
+Metadata-Version: 2.1
+Name: cbox-tool
+Version: 0.1.11
+Summary: A powerful multi-repository management tool for Git projects
+Home-page: https://github.com/beliefei/cbox
+Author: belief
+Author-email: beliefchinese@gmail.com
+Project-URL: Bug Tracker, https://github.com/beliefei/cbox/issues
+Project-URL: Documentation, https://github.com/beliefei/cbox/tree/main/docs
+Project-URL: Source Code, https://github.com/beliefei/cbox
+Keywords: git repository management tool workspace
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.0.0
+Requires-Dist: pyyaml>=6.0.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: gitpython>=3.1.0
+Requires-Dist: PySide6>=6.6.0
 
-setup(
-    name="cbox-tool",
-    version="0.1.11",
-    packages=find_packages(),
-    install_requires=[
-        "click>=8.0.0",
-        "pyyaml>=6.0.0",
-        "rich>=13.0.0",
-        "gitpython>=3.1.0",
-        "PySide6>=6.6.0",
-    ],
-    entry_points={
-        'console_scripts': [
-            'cbox=cbox.cli:main',
-            'cbox-gui=cbox.gui:main',
-        ],
-    },
-    author="belief",
-    author_email="beliefchinese@gmail.com",
-    description="A powerful multi-repository management tool for Git projects",
-    long_description="""
+
 # CBox
 
 [English](https://github.com/beliefei/cbox/docs/README_en.md) | [中文](https://github.com/beliefei/cbox/docs/README_zh.md)
@@ -68,21 +70,4 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 
 ## License
 This project is licensed under the MIT License.
-    """,
-    long_description_content_type="text/markdown",
-    url="https://github.com/beliefei/cbox",
-    project_urls={
-        "Bug Tracker": "https://github.com/beliefei/cbox/issues",
-        "Documentation": "https://github.com/beliefei/cbox/tree/main/docs",
-        "Source Code": "https://github.com/beliefei/cbox",
-    },
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-        "Topic :: Software Development :: Version Control",
-        "Topic :: Utilities",
-    ],
-    python_requires=">=3.8",
-    keywords="git repository management tool workspace",
-)
+    
