@@ -1,0 +1,7 @@
+.venv
+build/
+dist*
+cbox_tool.egg-info
+dist/*
+pypi.token
+__pycache__

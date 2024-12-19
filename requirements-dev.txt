@@ -1,0 +1,15 @@
+-r requirements.txt
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Linting and Formatting
+black>=22.0.0
+isort>=5.0.0
+flake8>=4.0.0
+mypy>=1.0.0
+
+# Documentation
+mkdocs>=1.4.0
+mkdocs-material>=9.0.0
