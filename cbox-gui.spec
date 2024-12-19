@@ -3,11 +3,11 @@
 block_cipher = None
 
 a = Analysis(
-    ['cbox/cli.py'],
+    ['cbox/gui.py'],  # 请根据实际的入口文件路径调整
     pathex=[],
     binaries=[],
     datas=[],
-    hiddenimports=[],
+    hiddenimports=['PySide6.QtCore', 'PySide6.QtGui', 'PySide6.QtWidgets'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -17,7 +17,6 @@ a = Analysis(
     cipher=block_cipher,
     noarchive=False,
 )
-
 pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
 
 exe = EXE(
@@ -27,14 +26,14 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='cbox',
+    name='cbox-gui',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=True,
+    console=False,  # GUI 程序设置为 False
     disable_windowed_traceback=False,
     target_arch=None,
     codesign_identity=None,

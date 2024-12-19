@@ -1,7 +1,8 @@
 .venv
 build/
 dist*
-cbox_tool.egg-info
+cbox_tool.egg-info/*
+cbox_tools.egg-info/*
 dist/*
 pypi.token
 __pycache__

@@ -1,37 +1,26 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
-
 setup(
-    name="cbox-tool",  
-    version="0.1.6",
+    name="cbox-tool",
+    version="0.1.7",
     packages=find_packages(),
     install_requires=[
         "click>=8.0.0",
         "pyyaml>=6.0.0",
         "rich>=13.0.0",
         "gitpython>=3.1.0",
+        "PySide6>=6.6.0",
     ],
-    extras_require={
-        'dev': [
-            'pytest>=7.0.0',
-            'pytest-cov>=4.0.0',
-            'black>=22.0.0',
-            'isort>=5.0.0',
-            'flake8>=4.0.0',
-            'mypy>=1.0.0',
-        ]
-    },
     entry_points={
         'console_scripts': [
-            'cbox=cbox.cli:cli',
+            'cbox=cbox.cli:main',
+            'cbox-gui=cbox.gui:main',
         ],
     },
     author="belief",
     author_email="beliefchinese@gmail.com",
     description="A powerful multi-repository management tool for Git projects",
-    long_description=long_description,
+    long_description="CBox is a powerful multi-repository management tool that helps you better organize and manage multiple Git repositories. It supports workspace management, batch operations, branch management, and other features, making multi-repository management simple and efficient.",
     long_description_content_type="text/markdown",
     url="https://github.com/beliefei/cbox",
     project_urls={
