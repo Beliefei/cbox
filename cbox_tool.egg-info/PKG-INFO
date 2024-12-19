@@ -1,13 +1,13 @@
 Metadata-Version: 2.1
 Name: cbox-tool
-Version: 0.1.11
+Version: 0.1.12
 Summary: A powerful multi-repository management tool for Git projects
-Home-page: https://github.com/beliefei/cbox
+Home-page: https://github.com/Beliefei/cbox
 Author: belief
 Author-email: beliefchinese@gmail.com
-Project-URL: Bug Tracker, https://github.com/beliefei/cbox/issues
-Project-URL: Documentation, https://github.com/beliefei/cbox/tree/main/docs
-Project-URL: Source Code, https://github.com/beliefei/cbox
+Project-URL: Bug Tracker, https://github.com/Beliefei/cbox/issues
+Project-URL: Documentation, https://github.com/Beliefei/cbox/tree/main/docs
+Project-URL: Source Code, https://github.com/Beliefei/cbox
 Keywords: git repository management tool workspace
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
@@ -25,11 +25,11 @@ Requires-Dist: PySide6>=6.6.0
 
 # CBox
 
-[English](https://github.com/beliefei/cbox/docs/README_en.md) | [中文](https://github.com/beliefei/cbox/docs/README_zh.md)
+[English](https://github.com/Beliefei/cbox/docs/README_en.md) | [中文](https://github.com/Beliefei/cbox/docs/README_zh.md)
 
 <div align="center">
 
-![CBox Logo](https://github.com/beliefei/cbox/icon.png)
+![CBox Logo](https://github.com/Beliefei/cbox/blob/main/icon.png)
 
 A powerful multi-repository management tool with GUI support.
 
@@ -40,7 +40,7 @@ A powerful multi-repository management tool with GUI support.
 
 ---
 
-**English** | [中文](https://github.com/beliefei/cbox/docs/README_zh.md)
+**English** | [中文](https://github.com/Beliefei/cbox/docs/README_zh.md)
 
 CBox is a powerful multi-repository management tool that helps you better organize and manage multiple Git repositories. It supports workspace management, batch operations, branch management, and other features, making multi-repository management simple and efficient.
 

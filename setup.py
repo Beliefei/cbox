@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="cbox-tool",
-    version="0.1.11",
+    version="0.1.12",
     packages=find_packages(),
     install_requires=[
         "click>=8.0.0",
@@ -23,11 +23,11 @@ setup(
     long_description="""
 # CBox
 
-[English](https://github.com/beliefei/cbox/docs/README_en.md) | [中文](https://github.com/beliefei/cbox/docs/README_zh.md)
+[English](https://github.com/Beliefei/cbox/docs/README_en.md) | [中文](https://github.com/Beliefei/cbox/docs/README_zh.md)
 
 <div align="center">
 
-![CBox Logo](https://github.com/beliefei/cbox/icon.png)
+![CBox Logo](https://github.com/Beliefei/cbox/blob/main/icon.png)
 
 A powerful multi-repository management tool with GUI support.
 
@@ -38,7 +38,7 @@ A powerful multi-repository management tool with GUI support.
 
 ---
 
-**English** | [中文](https://github.com/beliefei/cbox/docs/README_zh.md)
+**English** | [中文](https://github.com/Beliefei/cbox/docs/README_zh.md)
 
 CBox is a powerful multi-repository management tool that helps you better organize and manage multiple Git repositories. It supports workspace management, batch operations, branch management, and other features, making multi-repository management simple and efficient.
 
@@ -70,11 +70,11 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 This project is licensed under the MIT License.
     """,
     long_description_content_type="text/markdown",
-    url="https://github.com/beliefei/cbox",
+    url="https://github.com/Beliefei/cbox",
     project_urls={
-        "Bug Tracker": "https://github.com/beliefei/cbox/issues",
-        "Documentation": "https://github.com/beliefei/cbox/tree/main/docs",
-        "Source Code": "https://github.com/beliefei/cbox",
+        "Bug Tracker": "https://github.com/Beliefei/cbox/issues",
+        "Documentation": "https://github.com/Beliefei/cbox/tree/main/docs",
+        "Source Code": "https://github.com/Beliefei/cbox",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
