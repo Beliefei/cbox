@@ -42,7 +42,7 @@ pip install cbox-tool
 
 1. 克隆仓库：
 ```bash
-git clone https://github.com/beliefei/cbox.git
+git clone https://github.com/Beliefei/cbox.git
 cd cbox
 ```
 
@@ -194,4 +194,4 @@ cbox scan_import dev ~/projects
 2. 搜索已有问题
 3. 必要时创建新的问题
 
-更多信息，请访问我们的 [GitHub 仓库](https://github.com/beliefei/cbox)。
+更多信息，请访问我们的 [GitHub 仓库](https://github.com/Beliefei/cbox)。

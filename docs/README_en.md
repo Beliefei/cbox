@@ -42,7 +42,7 @@ pip install cbox-tool
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/beliefei/cbox.git
+git clone https://github.com/Beliefei/cbox.git
 cd cbox
 ```
 
@@ -194,4 +194,4 @@ If you encounter any issues or have questions, please:
 2. Search existing issues
 3. Create a new issue if needed
 
-For more information, visit our [GitHub repository](https://github.com/beliefei/cbox).
+For more information, visit our [GitHub repository](https://github.com/Beliefei/cbox).

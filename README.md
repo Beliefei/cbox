@@ -42,11 +42,11 @@ cbox clone dev https://github.com/user/repo.git
 cbox-gui
 ```
 
-For more details, see the [English documentation](https://github.com/beliefei/cbox/docs/README_en.md).
+For more details, see the [English documentation](https://github.com/Beliefei/cbox/docs/README_en.md).
 
 ---
 
-[English](https://github.com/beliefei/cbox/docs/README_en.md) | **中文**
+[English](https://github.com/Beliefei/cbox/docs/README_en.md) | **中文**
 
 CBox 是一个强大的多仓库管理工具，帮助您更好地组织和管理多个 Git 仓库。它支持工作空间管理、批量操作、分支管理等功能，让多仓库管理变得简单高效。
 
@@ -73,4 +73,4 @@ cbox clone dev https://github.com/user/repo.git
 cbox-gui
 ```
 
-更多详情，请查看[中文文档](https://github.com/beliefei/cbox/docs/README_zh.md)。
+更多详情，请查看[中文文档](https://github.com/Beliefei/cbox/docs/README_zh.md)。

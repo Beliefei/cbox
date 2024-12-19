@@ -24,7 +24,7 @@ cbox/
 
 1. **克隆仓库**
 ```bash
-git clone https://github.com/beliefei/cbox.git
+git clone https://github.com/Beliefei/cbox.git
 cd cbox
 ```
 
