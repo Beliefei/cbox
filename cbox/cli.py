@@ -283,17 +283,24 @@ def remove_repo(workspace, repo_name):
 @cli.command()
 @click.argument('workspace')
 @click.argument('source_branch')
-def merge(workspace, source_branch):
+# 添加merge的--no-ff选项
+@click.option('--no-ff', is_flag=True, help='不使用fast-forward合并')
+def merge(workspace, source_branch, no_ff):
     """合并指定分支到当前分支
 
     参数:
         WORKSPACE: 工作空间名称
         SOURCE_BRANCH: 要合并的源分支名称
+        --no-ff: 不使用fast-forward合并
 
     示例:
         $ cbox merge dev feature/new-ui
+        $ cbox merge dev feature/new-ui --no-ff
     """
-    CBox().merge(workspace, source_branch)
+    CBox().merge(workspace, source_branch, no_ff)
+
+def main():
+    cli()
 
 if __name__ == '__main__':
-    cli()
+    main()

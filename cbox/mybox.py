@@ -500,8 +500,9 @@ class CBox:
             self.console.print(f"[green]已删除工作空间 '{workspace}'")
         except Exception as e:
             self.console.print(f"[red]删除工作空间失败 - {str(e)}")
+    # 给merge添加一个参数来判断是否使用 --no-ff 参数,默认是是使用--no-ff
 
-    def merge(self, workspace: str, source_branch: str) -> None:
+    def merge(self, workspace: str, source_branch: str, no_ff: bool = True) -> None:
         """合并指定分支到当前分支
         
         Args:
@@ -538,7 +539,17 @@ class CBox:
                 
                 # 执行合并
                 try:
-                    repo.git.merge(source_branch)
+                    # 检查是否是gerrit仓库
+                    if repo.git.remote('show', 'origin').find('gerrit') != -1 or no_ff:
+                        # 解释下各个参数的含义
+                        # --no-ff: 禁用快速转发合并
+                        # --log: 显示合并日志
+                        # --no-edit: 禁用编辑合并消息
+                        # --strategy-option theirs: 使用 theirs 策略进行合并
+
+                        repo.git.merge(source_branch, '--no-ff', '--log', '--no-edit')
+                    else:
+                        repo.git.merge(source_branch)
                     status = "[green]合并成功"
                 except git.GitCommandError as e:
                     if "CONFLICT" in str(e):
